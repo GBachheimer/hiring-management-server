@@ -154,7 +154,7 @@ app.delete("/positions/delete/:id", (req, res) => {
     });
 });
 
-app.listen(5000, () => {
+app.listen(process.env.PORT || 3030, () => {
     console.log("Server is running on port 5000!");
 });
 
